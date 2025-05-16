@@ -21,7 +21,7 @@ export default function PortfolioSection() {
           className="w-32 h-32 rounded-full mb-4"
         />
         <h1 className="text-2xl font-semibold tracking-tighter mb-4">
-          My Portfolio
+          Pranav Mallela
         </h1>
         <p className="mb-4">
           {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
