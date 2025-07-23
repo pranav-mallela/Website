@@ -10,6 +10,21 @@ const facts = [
   'I love dark mode more than light themes.',
 ];
 
+function NowSection() {
+  return (
+    <div className="mt-8">
+      <h2 className="text-xl font-semibold mb-2">Some great books I've read on AI</h2>
+      <ul className="list-disc list-inside text-muted-foreground text-sm space-y-1">
+        <li>Life 3.0 - Max Tegmark </li>
+        <li>The Singularity is Nearer - Ray Kurzweil</li>
+        <li>Rule of the Robots - Martin Ford</li>
+        <li>What We Owe The Future - William MacAskill</li>
+        <li>The Alignment Problem - Brian Christian</li>
+      </ul>
+    </div>
+  );
+}
+
 export default function PortfolioSection() {
   return (
     <section className="flex flex-col md:flex-row gap-8">
@@ -24,18 +39,15 @@ export default function PortfolioSection() {
           Pranav Mallela
         </h1>
         <p className="mb-4">
-          {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-          Vim's keystroke commands and tabs' flexibility for personal viewing
-          preferences. This extends to my support for static typing, where its
-          early error detection ensures cleaner code, and my preference for dark
-          mode, which eases long coding sessions by reducing eye strain.`}
+          {`Bachelors in CS. Masters in CS. Pivoting to ML. Excited about Computer Vision.`}
         </p>
       </div>
 
       {/* Right column: blog posts + fun component */}
       <div className="md:flex-1">
-        <BlogPosts />
+        {/* <BlogPosts /> */}
         <RandomFact />
+        <NowSection />
       </div>
     </section>
   );
